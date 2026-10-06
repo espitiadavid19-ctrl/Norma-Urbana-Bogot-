@@ -210,19 +210,24 @@ function renderResultado(direccionConsultada, ficha) {
       <p><strong>Observaciones técnicas</strong><br>${escapeHtml(ficha.observacionesTecnicas)}</p>
     </div>
 
-    <div class="section-label">Entidades de control y regulación</div>
-    <div class="entities-grid">
-      ${ENTIDADES_CONTROL.map(
-        (e) => `
-        <div class="entity-card">
-          <span class="entity-card__icon">${escapeHtml(e.sigla.slice(0, 4))}</span>
-          <span>
-            <div class="entity-card__sigla">${escapeHtml(e.sigla)}</div>
-            <div class="entity-card__nombre">${escapeHtml(e.nombre)}</div>
-          </span>
-        </div>`
-      ).join("")}
-    </div>
+   <div class="section-label">Entidades de control y regulación</div>
+<div class="entities-grid">
+  ${ENTIDADES_CONTROL.map(
+    (e) => `
+    <a
+      href="${e.url}"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="entity-card"
+    >
+      <span class="entity-card__icon">${escapeHtml(e.sigla.slice(0, 4))}</span>
+      <span>
+        <div class="entity-card__sigla">${escapeHtml(e.sigla)}</div>
+        <div class="entity-card__nombre">${escapeHtml(e.nombre)}</div>
+      </span>
+    </a>`
+  ).join("")}
+</div>
 
     <div class="card__foot">
       <p class="disclaimer-inline">

@@ -733,7 +733,6 @@ a {
   gap: 8px;
 }
 
-
 /* ==========================================================================
    Entidades
    ========================================================================== */
@@ -749,10 +748,47 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 12px 14px;
   background: var(--paper);
+
+  /* Como ahora es un enlace <a> */
+  text-decoration: none;
+  color: inherit;
+
+  /* Indica que se puede hacer clic */
+  cursor: pointer;
+
+  /* Animación */
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+/* Efecto al pasar el mouse */
+.entity-card:hover {
+  text-decoration: none;
+  color: inherit;
+
+  transform: translateY(-3px);
+
+  border-color: var(--orange);
+
+  box-shadow: 0 8px 18px rgba(15, 37, 64, 0.10);
+}
+
+/* Efecto al hacer clic */
+.entity-card:active {
+  transform: translateY(-1px);
+}
+
+/* Accesibilidad con teclado */
+.entity-card:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
 }
 
 .entity-card__icon {
@@ -784,7 +820,6 @@ a {
   text-overflow: ellipsis;
   max-width: 180px;
 }
-
 
 /* ==========================================================================
    Foot

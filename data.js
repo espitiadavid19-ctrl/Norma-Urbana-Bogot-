@@ -64,14 +64,53 @@ const TRATAMIENTOS_POT_555 = {
 //    Lista general (no depende de la dirección consultada).
 // -----------------------------------------------------------------
 const ENTIDADES_CONTROL = [
-  { sigla: "SDP", nombre: "Secretaría Distrital de Planeación" },
-  { sigla: "UAECD", nombre: "Unidad Administrativa Especial de Catastro Distrital" },
-  { sigla: "IDU", nombre: "Instituto de Desarrollo Urbano" },
-  { sigla: "IDPC", nombre: "Instituto Distrital de Patrimonio Cultural" },
-  { sigla: "Curaduría", nombre: "Curadurías Urbanas de Bogotá (1 a 5)" },
-  { sigla: "ICANH", nombre: "Instituto Colombiano de Antropología e Historia" },
-  { sigla: "DADEP", nombre: "Departamento Administrativo de la Defensoría del Espacio Público" },
-  { sigla: "MinVivienda", nombre: "Ministerio de Vivienda, Ciudad y Territorio" },
+  {
+    sigla: "SDP",
+    nombre: "Secretaría Distrital de Planeación",
+    url: "https://www.sdp.gov.co/"
+  },
+
+  {
+    sigla: "UAECD",
+    nombre: "Unidad Administrativa Especial de Catastro Distrital",
+    url: "https://www.catastrobogota.gov.co/"
+  },
+
+  {
+    sigla: "IDU",
+    nombre: "Instituto de Desarrollo Urbano",
+    url: "https://www.idu.gov.co/"
+  },
+
+  {
+    sigla: "IDPC",
+    nombre: "Instituto Distrital de Patrimonio Cultural",
+    url: "https://idpc.gov.co/"
+  },
+
+  {
+    sigla: "Curaduría",
+    nombre: "Curadurías Urbanas de Bogotá",
+    url: "https://www.curaduriaurbana1.com/"
+  },
+
+  {
+    sigla: "ICANH",
+    nombre: "Instituto Colombiano de Antropología e Historia",
+    url: "https://www.icanh.gov.co/"
+  },
+
+  {
+    sigla: "DADEP",
+    nombre: "Departamento Administrativo de la Defensoría del Espacio Público",
+    url: "https://www.dadep.gov.co/"
+  },
+
+  {
+    sigla: "MinVivienda",
+    nombre: "Ministerio de Vivienda, Ciudad y Territorio",
+    url: "https://www.minvivienda.gov.co/"
+  }
 ];
 
 // -----------------------------------------------------------------
